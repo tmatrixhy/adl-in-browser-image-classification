@@ -1,0 +1,69 @@
+<!doctype html>
+
+<head>
+  <title>TensorFlow.js - Columbia Landmarks</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+  .pred-container {
+    margin-bottom: 20px;
+  }
+
+  .pred-container > div {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+  }
+
+  .row {
+    display: table-row;
+  }
+  .cell {
+    display: table-cell;
+    padding-right: 20px;
+  }
+
+  #file-container {
+    margin-bottom: 20px;
+  }
+</style>
+
+<body>
+  <div class="tfjs-example-container">
+    <section class='title-area'>
+      <h1>Applied Deep Learning: A Deployed Keras Model for Columbia Landmarks</h1>
+    </section>
+
+    <section>
+      <p>
+        This applied example is based on the Applied Deep Learning (COMS 4995) course at Columbia University and <a href="https://github.com/tensorflow/tfjs-examples/tree/master/mobilenet">this github repo</a>. <BR><BR>
+        
+        This website uses a convolutional neural network (CNN) with roughly 1,000,000 parameters of size (~10MB) to recognize landmarks (Scholar's Lion, Alma Mater, & Le Penseur) on the Columbia University campus in NYC. <BR><BR>
+        
+        This lightweight model was trained on a data-set consisting of 150 images.
+      </p>
+    </section>
+
+    <section>
+      <p class='section-head'>Status</p>
+      <div id="status"></div>
+    </section>
+
+    <section>
+      <p class='section-head'>Model Output</p>
+
+      <div id="file-container" style="display: none">
+        Upload an image: <input type="file" id="files" name="files[]" multiple />
+      </div>
+
+      <div id="predictions"></div>
+
+      <img style="display: none" id="lp_j" src="lp.jpg" width=300 height=300 />
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script src="index.js"></script>
+  </div>
+</body>
