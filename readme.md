@@ -4,7 +4,7 @@
 
 Recognize landmarks on Columbia's campus
 
-Trained a model to recognize landmarks (famous places, like the [Alma Mater sculpture](https://en.wikipedia.org/wiki/Alma_Mater_(New_York_sculpture)), or Butler library) on Columbia’s campus. 
+Trained a model to recognize landmarks (famous places, like the [Alma Mater sculpture](https://en.wikipedia.org/wiki/Alma_Mater_(New_York_sculpture)), or Butler library) on Columbia’s campus and deployed it on a website only using Javascript and HTML.
 
 
 # results
